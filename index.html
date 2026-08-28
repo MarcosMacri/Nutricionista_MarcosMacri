@@ -1,0 +1,3227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =========================================================
+         TÍTULO DA PÁGINA
+         
+         EDITE AQUI SE QUISER ALTERAR O NOME DA ABA DO NAVEGADOR
+         ========================================================= -->
+
+    <title>Marcos Macri | Nutricionista</title>
+
+
+    <!-- =========================================================
+         DESCRIÇÃO PARA GOOGLE
+         ========================================================= -->
+
+    <meta
+        name="description"
+        content="Marcos Macri Nutricionista. Emagrecimento e hipertrofia com alimentação flexível, sem fome e sem terrorismo nutricional. Atendimento online e presencial em Assis-SP."
+    >
+
+
+    <style>
+
+        /* =========================================================
+           =========================================================
+           CONFIGURAÇÃO DAS CORES
+           
+           Se quiser mudar as cores da página futuramente,
+           altere principalmente estas variáveis.
+           =========================================================
+           ========================================================= */
+
+        :root {
+
+            --azul-verde: #0b3948;
+
+            --azul-verde-claro: #14566a;
+
+            --verde: #20a86b;
+
+            --verde-forte: #15945c;
+
+            --verde-claro: #e8f7ef;
+
+            --verde-hover: #117c4c;
+
+            --branco: #ffffff;
+
+            --cinza-claro: #f5f8f7;
+
+            --cinza: #667477;
+
+            --preto: #162124;
+
+            --vermelho: #b40000;
+
+            --sombra:
+                0 15px 40px rgba(11, 57, 72, 0.10);
+            --sombra-2:
+                2px 5px 10px rgba(0, 0, 0, 0.521);
+
+        }
+
+
+        /* =========================================================
+           RESET
+           ========================================================= */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: var(--azul-verde);
+
+            background: var(--branco);
+
+            line-height: 1.6;
+
+        }
+
+
+        img {
+
+            max-width: 100%;
+
+            display: block;
+
+        }
+
+
+        /* Foto exibida entre os textos apenas no celular */
+        .mobile-photo {
+
+            display: none;
+
+        }
+
+
+        a {
+
+            text-decoration: none;
+
+        }
+
+
+        .container {
+
+            width: min(1120px, 90%);
+
+            margin: auto;
+
+        }
+
+
+        /* =========================================================
+           BOTÕES PRINCIPAIS
+           ========================================================= */
+
+        .btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            background: var(--verde-forte);
+
+            color: white;
+
+            padding: 16px 28px;
+
+            border-radius: 10px;
+
+            font-size: 16px;
+
+            font-weight: 700;
+
+            transition: 0.3s ease;
+
+            box-shadow:
+                0 8px 20px rgba(21, 148, 92, 0.20);
+
+        }
+
+
+        .btn:hover {
+
+            transform: translateY(-3px);
+
+            background: var(--verde-hover);
+
+            box-shadow:
+                0 12px 25px rgba(21, 148, 92, 0.28);
+
+        }
+
+
+        /* =========================================================
+           HEADER
+           ========================================================= */
+
+        header {
+
+            background-color: #fafeff;
+
+            box-shadow: 2px 5px 5px rgba(44, 44, 44, 0.466);
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            z-index: 10;
+
+            padding: 20px 0;
+
+        }
+
+
+        .nav {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+        }
+
+
+        /* =========================================================
+           LOGO
+           
+           EDITE AQUI:
+           
+           Coloque sua logo na pasta "images".
+           
+           Exemplo:
+           
+           images/logo.png
+           ========================================================= */
+
+        .logo img {
+
+            width: 200px;
+
+            max-height: 70px;
+
+            object-fit: contain;
+
+        }
+
+
+        /* =========================================================
+           MENU
+           ========================================================= */
+
+        .menu {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: flex-end;
+
+            gap: 8px;
+
+        }
+
+
+        .menu a {
+
+            color: var(--azul-verde);
+
+            font-weight: 700;
+
+            font-size: 14px;
+
+            padding: 10px 13px;
+
+            border-radius: 8px;
+
+            transition: 0.3s ease;
+
+            white-space: nowrap;
+
+        }
+
+
+        .menu a:hover {
+
+            background: var(--verde-claro);
+
+            color: var(--verde-forte);
+
+        }
+
+
+        /* =========================================================
+           WHATSAPP DO MENU
+           ========================================================= */
+
+        .menu .menu-whatsapp {
+
+            background: var(--verde-forte);
+
+            color: white;
+
+            padding: 11px 19px;
+
+            border-radius: 9px;
+
+            box-shadow:
+                0 6px 18px rgba(21, 148, 92, 0.22);
+
+        }
+
+
+        .menu .menu-whatsapp:hover {
+
+            background: var(--verde-hover);
+
+            color: white;
+
+            transform: translateY(-2px);
+
+        }
+
+
+        /* =========================================================
+           HERO
+           ========================================================= */
+
+        .hero {
+
+            min-height: 720px;
+
+            display: flex;
+
+            align-items: center;
+
+            padding: 130px 0 80px;
+
+            background:
+
+                radial-gradient(
+                    circle at 90% 20%,
+                    #e8f7ef 0,
+                    transparent 25%
+                ),
+
+                linear-gradient(
+                    180deg,
+                    #ffffff 0%,
+                    #f8fbfa 100%
+                );
+
+        }
+
+
+        .hero-content {
+
+            display: grid;
+
+            grid-template-columns:
+                1.05fr
+                0.95fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+
+        .tag {
+
+            display: inline-block;
+
+            background: var(--verde-claro);
+
+            color: var(--verde-forte);
+
+            padding: 8px 14px;
+
+            border-radius: 50px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .hero h1 {
+
+            font-size:
+                clamp(40px, 5vw, 62px);
+
+            line-height: 1.08;
+
+            margin-bottom: 25px;
+
+            letter-spacing: -1.5px;
+
+        }
+
+
+        .hero h1 span {
+
+            color: var(--verde-forte);
+
+        }
+
+
+        .hero p {
+
+            font-size: 19px;
+
+            color: var(--cinza);
+
+            max-width: 620px;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .hero-info {
+
+            display: flex;
+
+            gap: 20px;
+
+            margin-top: 22px;
+
+            color: var(--cinza);
+
+            font-size: 14px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        /* =========================================================
+           FOTO PRINCIPAL
+           
+           EDITE AQUI:
+           
+           images/marcos.jpg
+           ========================================================= */
+
+        .photo-wrapper {
+
+            position: relative;
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+
+        .photo-background {
+
+            position: absolute;
+
+            width: 380px;
+
+            height: 380px;
+
+            background: var(--verde-claro);
+
+            border-radius: 50%;
+
+            top: 35px;
+
+            right: 20px;
+
+            z-index: 0;
+
+        }
+
+
+        .photo {
+
+            width: 420px;
+
+            height: 520px;
+
+            object-fit: cover;
+
+            border-radius: 30px;
+
+            position: relative;
+
+            z-index: 1;
+
+            box-shadow: var(--sombra);
+
+        }
+
+
+        /* =========================================================
+           SEÇÕES
+           ========================================================= */
+
+        section {
+
+            padding: 90px 0;
+
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            max-width: 750px;
+
+            margin: 0 auto 55px;
+
+        }
+
+
+        .section-title h2 {
+
+            font-size:
+                clamp(32px, 4vw, 46px);
+
+            line-height: 1.15;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .section-title p {
+
+            color: var(--cinza);
+
+            font-size: 18px;
+
+        }
+
+        /* =========================================================
+   CONCLUSÃO DA SEÇÃO "VOCÊ JÁ CANSOU?"
+   ========================================================= */
+
+.cycle-conclusion {
+
+    max-width: 800px;
+
+    margin: 45px auto 0;
+
+    text-align: center;
+
+}
+
+
+.cycle-conclusion p {
+
+    color: #dce8eb;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+        /* =========================================================
+           CICLO
+           ========================================================= */
+
+        .cycle {
+
+            background: var(--azul-verde);
+
+            color: white;
+
+        }
+
+
+        .cycle .section-title p {
+
+            color: #dce8eb;
+
+        }
+
+
+        .cycle .tag {
+
+            background: rgba(255,255,255,0.10);
+
+            color: #8de0b5;
+
+        }
+
+
+        .cycle-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+
+        }
+
+
+        .cycle-card {
+
+            background:
+                rgba(255,255,255,0.08);
+
+            padding: 30px 24px;
+
+            border-radius: 16px;
+
+            border:
+                1px solid rgba(255,255,255,0.10);
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .cycle-card:hover {
+
+            transform: translateY(-5px);
+
+            background:
+                rgba(255,255,255,0.12);
+
+        }
+
+
+        .x {
+
+            width: 40px;
+
+            height: 40px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #ff7474;
+
+            color: var(--vermelho);
+
+            font-weight: 900;
+
+            font-size: 20px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .cycle-card h3 {
+
+            font-size: 18px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .cycle-card p {
+
+            color: #dce8eb;
+
+            font-size: 15px;
+
+        }
+
+
+        /* =========================================================
+           MÉTODO
+           ========================================================= */
+
+        .method {
+
+            background: var(--cinza-claro);
+
+        }
+
+
+        .method-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+        }
+
+
+        .method-card {
+
+            background: white;
+
+            padding: 20px 25px 30px;
+
+            border-radius: 18px;
+
+            box-shadow: var(--sombra);
+
+            overflow: hidden;
+
+        }
+
+
+
+        .check-list-metodo {
+
+            list-style: none;
+
+            margin-top: 25px;
+
+
+        }
+
+
+        .check-list-metodo li {
+
+            margin-bottom: 14px;
+
+            
+
+        }
+
+
+        .check-list-metodo li::before {
+
+            content: "✓";
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 25px;
+
+            height: 25px;
+
+            background: var(--verde-claro);
+
+            color: var(--verde-forte);
+
+            border-radius: 50%;
+
+            margin-right: 5px;
+
+
+        }
+
+
+        /* =========================================================
+           IMAGEM DOS PASSOS
+           
+           EDITE:
+           
+           images/passo-1.jpg
+           images/passo-2.jpg
+           images/passo-3.jpg
+           ========================================================= */
+
+        .method-image {
+
+            width: calc(100% + 50px);
+
+            height: 190px;
+
+            margin:
+                -20px -25px 25px;
+
+            overflow: hidden;
+
+            background: var(--verde-claro);
+
+        }
+
+
+        .method-image img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: 0.4s ease;
+
+        }
+
+
+        .method-card:hover
+        .method-image img {
+
+            transform: scale(1.04);
+
+        }
+
+
+        .number {
+
+            width: 48px;
+
+            height: 48px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: var(--verde-claro);
+
+            color: var(--verde-forte);
+
+            border-radius: 12px;
+
+            font-size: 20px;
+
+            font-weight: 800;
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .method-card h3 {
+
+            font-size: 21px;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .method-card p {
+
+            color: var(--cinza);
+
+        }
+
+
+        /* =========================================================
+           SUPORTE WHATSAPP
+           ========================================================= */
+
+        .whatsapp-support {
+
+            padding: 70px 0;
+
+            background: var(--verde-claro);
+
+        }
+
+
+        .support-content {
+
+            display: grid;
+
+            grid-template-columns:
+                auto 1fr auto;
+
+            gap: 30px;
+
+            align-items: center;
+
+            background: white;
+
+            padding: 35px 40px;
+
+            border-radius: 20px;
+
+            box-shadow: var(--sombra);
+
+        }
+
+
+        .support-icon {
+
+            width: 65px;
+
+            height: 65px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: var(--verde-forte);
+
+            font-size: 30px;
+
+        }
+
+
+        .support-text h2 {
+
+            font-size: 28px;
+
+            margin:
+                8px 0 10px;
+
+        }
+
+
+        .support-text p {
+
+            color: var(--cinza);
+
+            max-width: 700px;
+
+            font-size: 16px;
+
+        }
+
+
+        .support-text strong {
+
+            color: var(--azul-verde);
+
+        }
+
+
+        /* =========================================================
+           ALIMENTAÇÃO FLEXÍVEL
+           ========================================================= */
+
+        .flexible {
+
+            background: white;
+
+        }
+
+
+        .flexible-content {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+
+        .flexible-text h2 {
+
+            font-size:
+                clamp(32px, 4vw, 46px);
+
+            line-height: 1.15;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .flexible-text p {
+
+            color: var(--cinza);
+
+            font-size: 17px;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .check-list {
+
+            list-style: none;
+
+            margin-top: 25px;
+
+        }
+
+
+        .check-list li {
+
+            margin-bottom: 14px;
+
+            font-weight: 600;
+
+        }
+
+
+        .check-list li::before {
+
+            content: "✓";
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 25px;
+
+            height: 25px;
+
+            background: var(--verde-claro);
+
+            color: var(--verde-forte);
+
+            border-radius: 50%;
+
+            margin-right: 10px;
+
+            font-weight: bold;
+
+        }
+
+
+        .flexible-box {
+
+            background: var(--azul-verde);
+
+            color: white;
+
+            padding: 45px;
+
+            border-radius: 25px;
+
+            box-shadow: var(--sombra);
+
+        }
+
+
+        .flexible-box h3 {
+
+            font-size: 28px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .flexible-box p {
+
+            color: #dce8eb;
+
+            font-size: 17px;
+
+        }
+        /* =========================================================
+        DEPOIMENTOS DOS PACIENTES
+        ========================================================= */
+
+        .testimonials {
+            background: var(--branco);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 15px;
+            border-radius: 18px;
+            box-shadow: var(--sombra);
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-image {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+            object-fit: contain;
+        }
+
+        /* =========================================================
+           ATENDIMENTO
+           ========================================================= */
+
+        .attendance {
+
+            background: var(--cinza-claro);
+
+        }
+
+
+        .attendance-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+            max-width: 1120px;
+
+            margin: auto;
+
+            align-items: stretch;
+
+        }
+
+
+        .attendance-card {
+
+            background: white;
+
+            padding: 30px 28px;
+
+            border-radius: 18px;
+
+            text-align: left;
+
+            box-shadow: var(--sombra);
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .attendance-card:hover {
+
+            transform: translateY(-5px);
+
+        }
+
+
+        .attendance-icon {
+
+            font-size: 35px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .attendance-card h3 {
+
+            font-size: 21px;
+
+            line-height: 1.25;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .attendance-card p {
+
+            color: var(--cinza);
+
+            font-size: 15px;
+
+            line-height: 1.65;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .attendance-card strong {
+
+            color: var(--azul-verde);
+
+        }
+
+
+        .attendance-card ul {
+
+            margin: 8px 0 18px 20px;
+
+            color: var(--cinza);
+
+            font-size: 15px;
+
+            line-height: 1.65;
+
+        }
+
+
+        .attendance-card li {
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .attendance-card .method-label {
+
+            display: inline-block;
+
+            background: var(--verde-claro);
+
+            color: var(--verde-forte);
+
+            padding: 7px 12px;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        /* =========================================================
+           SOBRE MIM
+           ========================================================= */
+
+        .about {
+
+            background: white;
+
+        }
+
+
+        .about-content {
+
+            display: grid;
+
+            grid-template-columns:
+                0.8fr 1.2fr;
+
+            gap: 60px;
+
+            align-items: center;
+
+        }
+
+
+        /* =========================================================
+           SEGUNDA FOTO
+           
+           EDITE:
+           
+           images/marcos-sobre.jpg
+           ========================================================= */
+
+        .about-photo {
+
+            width: 100%;
+
+            max-width: 400px;
+
+            height: 450px;
+
+            object-fit: cover;
+
+            border-radius: 25px;
+
+            box-shadow: var(--sombra);
+
+        }
+
+
+        .about-text h2 {
+
+            font-size:
+                clamp(32px, 4vw, 45px);
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .about-text p {
+
+            color: var(--cinza);
+
+            font-size: 17px;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .about-name {
+
+            color: var(--verde-forte);
+
+            font-weight: 800;
+
+        }
+
+
+        /* =========================================================
+           CTA FINAL
+           ========================================================= */
+
+        .final-cta {
+
+            padding: 100px 0;
+
+            background:
+
+                radial-gradient(
+                    circle at 10% 20%,
+                    rgba(255,255,255,.12),
+                    transparent 25%
+                ),
+
+                var(--azul-verde);
+
+            color: white;
+
+            text-align: center;
+
+        }
+
+
+        .final-cta h2 {
+
+            font-size:
+                clamp(35px, 5vw, 52px);
+
+            line-height: 1.1;
+
+            max-width: 800px;
+
+            margin:
+                0 auto 20px;
+
+        }
+
+
+        .final-cta p {
+
+            max-width: 650px;
+
+            margin:
+                0 auto 30px;
+
+            color: #dce8eb;
+
+            font-size: 18px;
+
+        }
+
+
+        .final-cta .btn {
+
+            background: #24b875;
+
+            padding: 18px 35px;
+
+            font-size: 17px;
+
+        }
+
+
+        .final-cta .btn:hover {
+
+            background: #1ca365;
+
+        }
+
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+
+        footer {
+
+            background: #082c38;
+
+            color: #b9cbd0;
+
+            padding: 35px 0;
+
+            text-align: center;
+
+            font-size: 14px;
+
+        }
+
+
+        footer strong {
+
+            color: white;
+
+        }
+
+
+        /* =========================================================
+           WHATSAPP FLUTUANTE
+           ========================================================= */
+
+        .whatsapp {
+
+            position: fixed;
+
+            right: 22px;
+
+            bottom: 22px;
+
+            width: 58px;
+
+            height: 58px;
+
+            border-radius: 50%;
+
+            background: #20b76b;
+
+            color: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 26px;
+
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.20);
+
+            z-index: 100;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .whatsapp:hover {
+
+            transform: scale(1.08);
+
+        }
+
+
+        /* =========================================================
+           ANIMAÇÃO
+           ========================================================= */
+
+        .fade {
+
+            opacity: 0;
+
+            transform: translateY(25px);
+
+            transition: 0.7s ease;
+
+        }
+
+
+        .fade.visible {
+
+            opacity: 1;
+
+            transform: translateY(0);
+
+        }
+
+
+        /* =========================================================
+           =========================================================
+           TABLET
+           =========================================================
+           ========================================================= */
+
+        @media (max-width: 900px) {
+
+
+            .hero-content {
+
+                grid-template-columns: 1fr;
+
+                gap: 50px;
+
+                text-align: center;
+
+            }
+
+
+            .hero p {
+
+                margin-left: auto;
+
+                margin-right: auto;
+
+            }
+
+
+            .hero-info {
+
+                justify-content: center;
+
+            }
+
+
+            .photo-wrapper {
+
+                order: -1;
+
+            }
+
+
+            .photo {
+
+                width: 320px;
+
+                height: 400px;
+
+            }
+
+
+            .photo-background {
+
+                width: 300px;
+
+                height: 300px;
+
+            }
+
+
+            .cycle-grid {
+
+                grid-template-columns:
+                    1fr 1fr;
+
+            }
+
+
+            .method-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                max-width: 600px;
+
+                margin: auto;
+
+            }
+
+
+            .flexible-content {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .about-content {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .about-photo {
+
+                margin: auto;
+
+            }
+
+
+            .support-content {
+
+                grid-template-columns:
+                    1fr;
+
+                text-align: center;
+
+            }
+
+
+            .support-icon {
+
+                margin: auto;
+
+            }
+
+
+            .support-content .btn {
+
+                width: 100%;
+
+            }
+
+        }
+
+
+        /* =========================================================
+           =========================================================
+           CELULAR
+           
+           IMPORTANTE:
+           
+           O MENU NÃO É ESCONDIDO.
+           
+           Ele continua aparecendo na tela.
+           =========================================================
+           ========================================================= */
+
+        @media (max-width: 650px) {
+
+
+
+            
+
+
+            header {
+
+                padding: 15px 0;
+
+            }
+
+
+            .nav {
+
+                flex-direction: column;
+
+                gap: 10px;
+
+            }
+
+
+            /* LOGO */
+
+            .logo img {
+
+                width: 170px;
+
+                max-height: 65px;
+
+            }
+
+
+            /* =====================================================
+               MENU DO CELULAR
+               ===================================================== */
+
+            .menu {
+
+                width: 100%;
+
+                display: flex;
+
+                justify-content: center;
+
+                align-items: center;
+
+                flex-wrap: wrap;
+
+                gap: 4px;
+
+            }
+
+
+            .menu a {
+
+                font-size: 11px;
+
+                padding: 7px 7px;
+
+            }
+
+
+            .menu .menu-whatsapp {
+
+                padding: 8px 12px;
+
+                font-size: 11px;
+
+            }
+
+
+            /* HERO */
+
+            /* No celular, a foto fica logo abaixo do primeiro parágrafo. */
+            .photo-wrapper {
+
+                display: none;
+
+            }
+
+            .mobile-photo {
+
+                position: relative;
+                display: flex;
+                min-height: 400px;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0 25px;
+
+            }
+
+            .mobile-photo .photo-background {
+
+                top: 35px;
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+
+            }
+
+            .mobile-photo .photo {
+
+                width: 320px;
+                height: 400px;
+
+            }
+
+            .hero {
+
+
+                padding:
+                    170px 0 70px;
+
+            }
+
+
+            section {
+
+                padding: 70px 0;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 40px;
+
+            }
+
+
+            .hero p {
+
+                font-size: 17px;
+
+            }
+
+
+            .hero .btn {
+
+                width: 100%;
+
+            }
+
+
+            .cycle-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .attendance-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .flexible-box {
+
+                padding: 30px;
+
+            }
+
+
+            .photo {
+
+                width: 280px;
+
+                height: 360px;
+
+            }
+
+
+            .photo-background {
+
+                width: 260px;
+
+                height: 260px;
+
+            }
+
+
+            .method-image {
+
+                height: 180px;
+
+            }
+
+
+            .whatsapp-support {
+
+                padding:
+                    50px 0;
+
+            }
+
+
+            .support-content {
+
+                padding: 30px 22px;
+
+            }
+
+
+            .support-text h2 {
+
+                font-size: 25px;
+
+            }
+
+
+            .final-cta {
+
+                padding:
+                    80px 0;
+
+            }
+
+
+            .final-cta .btn {
+
+                width: 100%;
+
+            }
+
+
+            .whatsapp {
+
+                right: 16px;
+
+                bottom: 16px;
+
+            }
+
+            /* =====================================================
+        CICLO DA DIETA - LISTA NO CELULAR
+        No PC continua com os 4 cards lado a lado.
+        No celular vira um único bloco empilhado.
+        ===================================================== */
+
+        .cycle-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .cycle-card {
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            column-gap: 15px;
+            padding: 22px 20px;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            margin: 0;
+        }
+
+        .cycle-card:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        }
+
+        /* X fica na primeira coluna */
+        .cycle-card .x {
+            grid-column: 1;
+            grid-row: 1 / span 2;
+
+            width: 30px;
+            height: 30px;
+
+            margin: 0;
+
+            font-size: 16px;
+        }
+
+        /* Título fica ao lado do X */
+        .cycle-card h3 {
+            grid-column: 2;
+            grid-row: 1;
+
+            margin: 2px 0 5px;
+
+            font-size: 17px;
+            line-height: 1.35;
+        }
+
+        /* Texto fica abaixo do título */
+        .cycle-card p {
+            grid-column: 2;
+            grid-row: 2;
+
+            margin: 0;
+
+            font-size: 14px;
+            line-height: 1.55;
+            color: #dce8eb;
+        }
+
+                }
+
+
+        
+
+                       /* =========================================================
+        DEPOIMENTOS - CELULAR
+        ========================================================= */
+
+        @media (max-width: 900px) {
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                max-width: 600px;
+            }
+
+            .testimonial-card {
+                padding: 12px;
+            }
+
+        }
+        /* =========================================================
+           CELULARES MUITO PEQUENOS
+           
+           Mantém o menu visível, mas organiza melhor.
+           ========================================================= */
+
+        @media (max-width: 430px) {
+
+
+            .nav {
+
+                gap: 8px;
+
+            }
+
+
+            .logo img {
+
+                width: 155px;
+                max-height: 60px;
+
+            }
+
+
+            .menu {
+
+                gap: 3px;
+
+            }
+
+
+            .menu a {
+
+                font-size: 10px;
+
+                padding:
+                    6px 5px;
+
+            }
+
+
+            .menu .menu-whatsapp {
+
+                font-size: 10px;
+
+                padding:
+                    7px 9px;
+
+            }
+
+
+            .hero {
+
+                padding-top:
+                    165px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 36px;
+
+            }
+
+
+            .photo {
+
+                width: 250px;
+
+                height: 330px;
+
+            }
+
+
+            .photo-background {
+
+                width: 230px;
+
+                height: 230px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         =========================================================
+         HEADER
+         =========================================================
+         ========================================================= -->
+
+    <header>
+
+        <div class="container nav">
+
+
+            <!-- =================================================
+                 LOGO
+                 
+                 EDITE:
+                 images/logo.png
+                 ================================================= -->
+
+            <a href="#" class="logo">
+
+                <img
+                    src="LOGO REFINADA.png"
+                    alt="Marcos Macri Nutricionista"
+                >
+
+            </a>
+
+
+            <!-- =================================================
+                 MENU
+                 ================================================= -->
+
+            <nav class="menu">
+
+
+                <a href="#Metodos">
+                    Formas de acompanhamento
+                </a>
+
+
+                <a href="#flexivel" class="menu-flexivel">
+                    Alimentação flexível
+                </a>
+
+
+
+                <!-- =================================================
+                     WHATSAPP
+                     
+                     EDITE O NÚMERO:
+                     
+                     5518999999999
+                     ================================================= -->
+
+                <a
+                    href="https://wa.me/18996625268"
+                    target="_blank"
+                    class="menu-whatsapp"
+                >
+                    WhatsApp
+                </a>
+
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         =========================================================
+         HERO
+         =========================================================
+         ========================================================= -->
+
+    <section class="hero">
+
+        <div class="container hero-content">
+
+
+            
+
+
+            <div class="fade">
+
+
+                <span class="tag">
+                    NUTRIÇÃO SEM TERRORISMO
+                </span>
+
+
+                <!-- =================================================
+                     TÍTULO PRINCIPAL
+                     ================================================= -->
+
+                <h1>
+
+                    Tenha uma alimentação que cabe na
+                    <span>
+                     SUA VIDA.
+                    </span>
+
+                </h1>
+
+
+                <!-- =================================================
+                     TEXTO PRINCIPAL
+                     ================================================= -->
+
+                <p>
+
+                    Um acompanhamento nutricional com um <strong>plano alimentar 100% individualizado</strong>,
+                    calculado exclusivamente para a sua rotina,
+                    preferências, gostos e horários. Sem terrorismo nutricional.
+
+                </p>
+
+                <div class="mobile-photo" aria-hidden="true">
+
+                    <div class="photo-background"></div>
+
+                    <img
+                        src="foto de perfil perfil.png"
+                        alt=""
+                        class="photo"
+                    >
+
+                </div>
+                
+                <p>
+                    <strong>Acompanhamento 100% online ou Presencial</strong>
+
+                </p>
+
+
+                <!-- =================================================
+                     CTA PRINCIPAL
+                     
+                     EDITE O NÚMERO DO WHATSAPP
+                     ================================================= -->
+
+                <a
+                    class="btn"
+                    href="https://wa.me/18996625268"
+                    target="_blank"
+                >
+
+                    Agendar minha consulta pelo WhatsApp →
+
+                </a>
+
+
+                <div class="hero-info">
+
+                    <span>
+                        ✓ Emagrecimento
+                    </span>
+
+                    <span>
+                        ✓ Hipertrofia
+                    </span>
+
+                    <span>
+                        ✓ Alimentação flexível
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 FOTO PRINCIPAL
+                 
+                 EDITE:
+                 images/marcos.jpg
+                 ================================================= -->
+
+            <div class="photo-wrapper fade">
+
+                <div class="photo-background"></div>
+
+                <img
+                    src="foto de perfil perfil.png"
+                    alt="Marcos Macri Nutricionista"
+                    class="photo"
+                >
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    
+     <!-- =========================================================
+        =========================================================
+        DEPOIMENTOS DE PACIENTES
+        ========================================================= -->
+
+    <section class="testimonials">
+
+        <div class="container">
+
+
+            <!-- =================================================
+                TÍTULO DA SEÇÃO
+                ================================================= -->
+
+            <div class="section-title fade">
+
+                <span class="tag">
+                    O QUE MEUS PACIENTES DIZEM
+                </span>
+
+                <h2>
+                    Quem já passou pelo acompanhamento sabe.
+                </h2>
+
+                <p>
+                    Confira alguns relatos de pacientes sobre a experiência
+                    com o acompanhamento nutricional.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                PRINTS DOS DEPOIMENTOS
+                
+                EDITE AQUI:
+                
+                Coloque os prints dentro da pasta "images".
+
+                Exemplo:
+                images/depoimento-1.jpg
+                images/depoimento-2.jpg
+                images/depoimento-3.jpg
+                ================================================= -->
+
+            <div class="testimonials-grid">
+
+
+                <!-- =================================================
+                    DEPOIMENTO 01
+                    ================================================= -->
+
+                <div class="testimonial-card fade">
+
+                    <img
+                        src="feedback 2 - edit.jpg"
+                        alt="Depoimento de paciente"
+                        class="testimonial-image"
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                    DEPOIMENTO 02
+                    ================================================= -->
+
+                <div class="testimonial-card fade">
+
+                    <img
+                        src="feedback 4 -edit.jpg"
+                        alt="Depoimento de paciente"
+                        class="testimonial-image"
+                    >
+
+                </div>
+
+
+                <!-- =================================================
+                    DEPOIMENTO 03
+                    ================================================= -->
+
+                <div class="testimonial-card fade">
+
+                    <img
+                        src="feedback 6 - edit.jpg"
+                        alt="Depoimento de paciente"
+                        class="testimonial-image"
+                    >
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         =========================================================
+         CICLO DA DIETA
+         =========================================================
+         ========================================================= -->
+
+    <section class="cycle">
+
+    <div class="container">
+
+        <!-- =================================================
+             TÍTULO DA SEÇÃO
+             ================================================= -->
+
+        <div class="section-title fade">
+
+            <span class="tag">
+                TALVEZ VOCÊ SE IDENTIFIQUE
+            </span>
+
+            <h2>
+                Você já cansou de viver nesse ciclo?
+            </h2>
+
+        </div>
+
+
+        <!-- =================================================
+             CARDS
+             ================================================= -->
+
+        <div class="cycle-grid">
+
+
+            <!-- CARD 01 -->
+
+            <div class="cycle-card fade">
+
+                <div class="x">
+                    X
+                </div>
+
+                <h3>
+                    Começar uma dieta restritiva
+                </h3>
+
+                <p>
+
+                    Começar uma dieta restritiva na segunda-feira
+                    e "chutar o balde" na sexta à noite.
+
+                </p>
+
+            </div>
+
+
+            <!-- CARD 02 -->
+
+            <div class="cycle-card fade">
+
+                <div class="x">
+                    X
+                </div>
+
+                <h3>
+                    Ter medo dos alimentos
+                </h3>
+
+                <p>
+
+                    Acreditar que para emagrecer você precisa
+                    cortar pão, arroz, massa ou chocolate.
+
+                </p>
+
+            </div>
+
+
+            <!-- CARD 03 -->
+
+            <div class="cycle-card fade">
+
+                <div class="x">
+                    X
+                </div>
+
+                <h3>
+                    Treinar sem enxergar evolução
+                </h3>
+
+                <p>
+
+                    Treinar com dedicação, mas não enxergar
+                    evolução no espelho ou na balança.
+
+                </p>
+
+            </div>
+
+
+            <!-- CARD 04 -->
+
+            <div class="cycle-card fade">
+
+                <div class="x">
+                    X
+                </div>
+
+                <h3>
+                    Viver pulando de dieta em dieta
+                </h3>
+
+                <p>
+
+                    Viver pulando de dieta em dieta sem encontrar
+                    algo que realmente caiba na sua vida.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             FRASE FINAL DA SEÇÃO
+             
+             AGORA ELA FICA ABAIXO DOS 4 CARDS.
+             ================================================= -->
+
+        <div class="cycle-conclusion fade">
+
+            <p>
+
+                Talvez o problema não seja falta de força de vontade.
+                
+                Talvez você simplesmente nunca tenha encontrado uma
+                estratégia que realmente caiba na sua vida.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+ </section>
+
+
+    <!-- =========================================================
+         =========================================================
+         ALIMENTAÇÃO FLEXÍVEL
+         ========================================================= -->
+
+    <section
+        class="flexible"
+        id="flexivel"
+    >
+
+        <div class="container flexible-content">
+
+
+            <div class="flexible-text fade">
+
+
+                <span class="tag">
+                    ALIMENTAÇÃO FLEXÍVEL
+                </span>
+
+
+                <h2 style="color: var(--azul-verde);">
+                    
+
+                    Você não precisa viver
+                    de frango e salada.
+
+                </h2>
+
+
+                <p>
+
+                    Uma alimentação voltada para seus objetivos
+                    não precisa eliminar os alimentos que você gosta.
+
+                </p>
+
+
+                <p>
+
+                    O objetivo é encontrar o equilíbrio entre
+                    resultado, prazer e uma rotina que você
+                    consiga manter.
+
+                </p>
+
+
+                <ul class="check-list" style="color: var(--azul-verde);">
+
+
+                    <li>
+                        Pão pode fazer parte.
+                    </li>
+
+
+                    <li>
+                        Arroz e massa podem fazer parte.
+                    </li>
+
+
+                    <li>
+                        Chocolate também pode fazer parte.
+                    </li>
+
+
+                    <li>
+                        Sua alimentação deve caber na sua vida.
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="flexible-box fade">
+
+
+                <h3>
+                    Sem terrorismo. Sem culpa.
+                </h3>
+
+
+                <p>
+
+                    O foco não é criar uma lista de alimentos
+                    proibidos. É ensinar você a tomar decisões
+                    melhores enquanto trabalha em direção ao
+                    seu objetivo.
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    <strong>
+
+                        Emagrecimento e hipertrofia com uma
+                        estratégia individualizada e flexível.
+
+                    </strong>
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+        
+            
+    <!-- =========================================================
+         =========================================================
+         MÉTODOS DE ACOMPANHAMENTO
+         =========================================================
+         ========================================================= -->
+
+    <section class="attendance" id="Metodos">
+
+        <div class="container">
+
+
+            <div class="section-title fade">
+
+
+                <span class="tag">
+                    CONHEÇA OS MEUS MÉTODOS DE ACOMPANHAMENTO
+                </span>
+
+
+                <h2>
+                    Escolha a forma de acompanhamento que melhor combina com você.
+                </h2>
+
+
+                <p>
+                    Diferentes formatos de atendimento, sempre com uma estratégia
+                    alimentar individualizada e pensada para a sua realidade.
+                </p>
+
+
+            </div>
+
+
+            <div class="attendance-grid">
+
+
+                <!-- =================================================
+                     MÉTODO 01
+                     CONSULTORIA EXPRESS DIGITAL
+                     ================================================= -->
+
+                <div class="attendance-card fade">
+
+
+                    <div class="attendance-icon">
+                        📝
+                    </div>
+
+
+                    <span class="method-label">
+                        MENOR INVESTIMENTO
+                    </span>
+
+
+                    <h3>
+                        Consultoria Express Digital
+                    </h3>
+
+
+                    <p>
+                        <em>
+                            Praticidade, agilidade e um plano profissional
+                            com menor investimento.
+                        </em>
+                    </p>
+
+
+                    <p>
+                        <strong>Como funciona:</strong>
+                        Não realizamos chamadas de vídeo ou agendamentos.
+                        Você preenche um formulário inteligente e muito detalhado
+                        no seu tempo. Com base nele, eu construo sua estratégia.
+                    </p>
+
+
+                    <p>
+                        <strong>Plano Alimentar:</strong>
+                        100% individualizado,
+                        baseado integralmente nas <strong>informações passadas no formulário:</strong>
+                        seus gostos, rotina, objetivos e dificuldades.
+                    </p>
+
+
+                    <p>
+                        <strong>Prazo de entrega:</strong>
+                        Seu plano alimentar é liberado direto no aplicativo
+                        WebDiet de <strong>1 a 4 dias úteis</strong>.
+                    </p>
+
+
+                    <p>
+                        <strong>O que inclui:</strong>
+                    </p>
+
+                    <ul class="check-list-metodo">
+                        <li>Plano alimentar personalizado completo.</li>
+                        <li>Acesso ao aplicativo exclusivo do WebDiet onde você terá acesso ao seu plano alimentar e orientações.</li>
+                        <li>
+                            <strong>Suporte:</strong> Direto comigo via WhatsApp
+                            para dúvidas, feedbacks e ajustes caso necessário durante todo o período de acompanhamento.
+                        </li>
+                    </ul>
+
+
+                </div>
+
+
+                <!-- =================================================
+                     MÉTODO 02
+                     ATENDIMENTO ONLINE PREMIUM
+                     ================================================= -->
+
+                <div class="attendance-card fade">
+
+
+                    <div class="attendance-icon">
+                        💻
+                    </div>
+
+
+                    <span class="method-label">
+                        VIDEOCHAMADA
+                    </span>
+
+
+                    <h3>
+                        Atendimento Online Premium
+                    </h3>
+
+
+                    <p>
+                        <em>
+                            Conversa detalhada e ajustes
+                            em tempo real sem sair de casa, 
+                            método que me permite te atender em qualquer lugar do mundo.
+                        </em>
+                    </p>
+
+
+                    <p>
+                        <strong>Como funciona:</strong>
+                        Realizamos uma consulta individual ao vivo por videochamada
+                        com duração de <strong>60 a 120 minutos</strong> para elaborar a melhor estrategia para você. A base do seu plano alimentar é construída junto
+                        com você durante a consulta.
+                    </p>
+
+
+                    <p>
+                        <strong>Plano Alimentar:</strong>
+                        100% individualizado baseado nos seus
+                        gostos, rotina, objetivos e dificuldades.
+                    </p>
+
+
+                    <p>
+                        <strong>Prazo de entrega:</strong>
+                        Seu plano alimentar definitivo é liberado no aplicativo
+                        em <strong>até 24 horas</strong>.
+                    </p>
+
+
+                    <p>
+                        <strong>Avaliação física:</strong>
+                        Eu te envio um guia simples e prático de como tirar
+                        as suas medidas em casa de forma tranquila e precisa.
+                    </p>
+
+
+                    <p>
+                        <strong>O que inclui:</strong>
+                    </p>
+
+                    <ul class="check-list-metodo">
+                        <li>Plano alimentar personalizado completo.</li>
+                        <li>Acesso ao aplicativo exclusivo do WebDiet onde você terá acesso ao seu plano alimentar e orientações.</li>
+                        
+                        <li>
+                            <strong>Suporte:</strong> Direto comigo via WhatsApp
+                            para dúvidas, feedbacks e ajustes caso necessário durante todo o período de acompanhamento.
+                        </li>
+                    </ul>
+
+
+                </div>
+
+
+                <!-- =================================================
+                     MÉTODO 03
+                     ATENDIMENTO PRESENCIAL VIP
+                     ================================================= -->
+
+                <div class="attendance-card fade">
+
+
+                    <div class="attendance-icon">
+                        💎
+                    </div>
+
+
+                    <span class="method-label">
+                        HOME CARE • ASSIS-SP 
+                    </span>
+
+
+                    <h3>
+                        Atendimento Presencial VIP 
+                    </h3>
+
+
+                    <p>
+                        <em>
+                            A máxima comodidade e privacidade. Eu vou até a sua
+                            casa ou escritório com todos os equipamentos.
+                        </em>
+                    </p>
+
+
+                    <p>
+                        <strong>Como funciona:</strong>
+                        Atendimento físico com hora marcada diretamente no conforto
+                        do seu lar. Dedico de <strong>60 a 120 minutos</strong> para elaborar a melhor estrategia para você. A base do seu plano alimentar é construída junto
+                        com você durante a consulta.
+                    </p>
+
+
+                    <p>
+                        <strong>Plano Alimentar:</strong>
+                        100% individualizado baseado nos seus
+                        gostos, rotina, objetivos e dificuldades.
+                    </p>
+
+
+                    <p>
+                        <strong>Prazo de entrega:</strong>
+                        Seu plano alimentar definitivo é liberado no aplicativo
+                        em <strong>até 24 horas</strong>.
+                    </p>
+
+
+                    <p>
+                        <strong>Avaliação física:</strong>
+                        Realizo a sua avaliação de composição corporal pessoalmente,
+                        levando todos os equipamentos necessários até você.
+                    </p>
+
+
+                    <p>
+                        <strong>O que inclui:</strong>
+                    </p>
+
+                    <ul class="check-list-metodo">
+                        <li>Plano alimentar personalizado completo.</li>
+                        <li>Avaliação Fisíca completa(medidas, pesagem, bioimpedância e medição de dobras cutaneas).</li>
+                        <li>Acesso ao aplicativo exclusivo do WebDiet onde você terá acesso ao seu plano alimentar e orientações.</li>
+                        <li>
+                            <strong>Suporte:</strong> Direto comigo via WhatsApp
+                            para dúvidas, feedbacks e ajustes caso necessário durante todo o período de acompanhamento.
+                        </li>
+                    </ul>
+
+
+                </div>
+                
+
+
+            </div>
+
+                
+        </div>
+
+        <div style="justify-content: center; display: flex; margin-top: 25px;">
+            <a
+                    class="btn"
+                    href="https://wa.me/18996625268"
+                    target="_blank"
+                    style="align-items: center; width: 400px; justify-content: center;"
+                >
+
+                    Agendar minha consulta pelo WhatsApp →
+
+                </a>
+        </div>
+
+        
+
+    </section>
+
+
+    <!-- =========================================================
+         =========================================================
+         SOBRE MIM
+         
+         EDITE:
+         images/marcos-sobre.jpg
+         ========================================================= -->
+
+    <section
+        class="about"
+        id="sobre"
+    >
+
+        <div class="container about-content">
+
+
+            <div class="fade">
+
+
+                <img
+                    src="foto de perfil perfil.png"
+                    alt="Marcos Macri Nutricionista"
+                    class="about-photo"
+                >
+
+
+            </div>
+
+
+            <div class="about-text fade">
+
+
+                <span class="tag">
+                    SOBRE MIM
+                </span>
+
+
+                <h2>
+
+                    Prazer, eu sou
+
+                    <span class="about-name">
+                        Marcos Macri.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Sou nutricionista (CRN-3 78120) e trabalho principalmente
+                    com <strong>emagrecimento e hipertrofia</strong>,
+                    utilizando uma abordagem baseada em estratégia,
+                    individualização e alimentação flexível.
+
+                </p>
+
+
+                <p>
+
+                    Acredito que uma boa estratégia alimentar
+                    não deve fazer você viver em função da dieta.
+
+                </p>
+
+
+                <p>
+
+                    Ela deve se adaptar à sua rotina, aos seus
+                    horários, aos seus treinos e, principalmente,
+                    aos alimentos que você gosta.
+
+                </p>
+
+
+                <p>
+
+                    Meu objetivo é ajudar você a construir uma
+                    alimentação que gere resultado e que também
+                    seja possível de manter a constância.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         =========================================================
+         CTA FINAL
+         ========================================================= -->
+
+    <section
+        class="final-cta"
+        id="contato"
+    >
+
+        <div class="container fade">
+
+
+            <h2>
+
+                Chega de recomeçar
+                toda segunda-feira.
+
+            </h2>
+
+
+            <p>
+
+                Vamos construir uma estratégia alimentar que
+                faça sentido para o seu objetivo e para a sua vida.
+
+            </p>
+
+
+            <!-- =================================================
+                 EDITE O NÚMERO DO WHATSAPP
+                 ================================================= -->
+
+            <a
+                class="btn"
+                href="https://wa.me/COLOQUE_SEU_NUMERO_AQUI?text=Olá%20Marcos!%20Quero%20começar%20meu%20acompanhamento%20nutricional."
+                target="_blank"
+            >
+
+                Quero começar meu acompanhamento →
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         =========================================================
+         FOOTER
+         =========================================================
+         ========================================================= -->
+
+    <footer>
+
+        <div class="container">
+
+
+            <p>
+
+                © 2026
+
+                <strong>
+                    Marcos Macri Nutricionista
+                </strong>.
+
+                Todos os direitos reservados.
+
+            </p>
+
+
+            <p>
+
+                Atendimento online e presencial
+                em Assis - SP.
+
+            </p>
+
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         =========================================================
+         BOTÃO WHATSAPP FLUTUANTE
+         =========================================================
+         ========================================================= -->
+
+    <a
+        class="whatsapp"
+        href="https://wa.me/18996625268"
+        target="_blank"
+        aria-label="Falar com Marcos pelo WhatsApp"
+    >
+
+        <img src="WHATSAPP LOGO.png" alt="">
+
+    </a>
+
+
+    <!-- =========================================================
+         =========================================================
+         JAVASCRIPT
+         =========================================================
+         ========================================================= -->
+
+    <script>
+
+
+        /* =========================================================
+           ANIMAÇÃO DOS ELEMENTOS
+           
+           Faz os elementos aparecerem suavemente conforme
+           o usuário rola a página.
+           ========================================================= */
+
+
+        const elements =
+            document.querySelectorAll('.fade');
+
+
+        const observer =
+            new IntersectionObserver(
+
+                (entries) => {
+
+                    entries.forEach(
+
+                        (entry) => {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target.classList.add(
+                                    'visible'
+                                );
+
+                            }
+
+                        }
+
+                    );
+
+                },
+
+                {
+
+                    threshold: 0.15
+
+                }
+
+            );
+
+
+        elements.forEach(
+
+            (element) => {
+
+                observer.observe(element);
+
+            }
+
+        );
+
+
+        /* =========================================================
+           SCROLL SUAVE DO MENU
+           
+           Faz os links:
+           
+           Como funciona
+           Alimentação flexível
+           Sobre mim
+           
+           descerem suavemente até a seção.
+           ========================================================= */
+
+
+        document
+            .querySelectorAll(
+                'a[href^="#"]'
+            )
+            .forEach(
+
+                (anchor) => {
+
+                    anchor.addEventListener(
+
+                        'click',
+
+                        function (event) {
+
+                            const target =
+                                document.querySelector(
+                                    this.getAttribute(
+                                        'href'
+                                    )
+                                );
+
+
+                            if (target) {
+
+                                event.preventDefault();
+
+
+                                target.scrollIntoView({
+
+                                    behavior: 'smooth'
+
+                                });
+
+                            }
+
+                        }
+
+                    );
+
+                }
+
+            );
+
+
+    </script>
+
+
+</body>
+
+</html>
